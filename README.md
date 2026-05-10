@@ -1,142 +1,98 @@
-# Student Performance Prediction — Linear Regression Model
+# Predictive Modeling — Study Time vs Exam Score (Linear Regression)
 
-## Overview
-
-This project implements a simple linear regression model to analyze the relationship between study time and exam performance.
-
-The objective is to demonstrate how machine learning can be used to identify patterns in data and make predictions based on those patterns.
+## Overview  
+This project applies machine learning to predict exam performance based on study time, demonstrating a fundamental supervised learning workflow using Linear Regression.
 
 ---
 
-## Problem Statement
-
-Understanding the factors that influence academic performance is important in education.
-
-This project aims to answer:
-
-* Is there a relationship between hours studied and exam scores?
-* Can we predict student performance based on study time?
+## Problem Statement  
+Predicting academic performance helps identify how effort translates into results.  
+This project focuses on modeling the relationship between study time and exam scores.
 
 ---
 
-## Data
-
-A structured dataset was created with the following variables:
-
-* `hours_studied`: number of hours a student studies
-* `exam_score`: corresponding exam result
-
-The dataset includes 8 observations representing increasing study time and performance.
+## Objective  
+- Build a regression model to predict exam scores  
+- Quantify the impact of study time on performance  
 
 ---
 
-## Methodology
+## Dataset  
 
-### Data Preparation
-
-* Data was organized into a Pandas DataFrame
-* Features (`hours_studied`) and target (`exam_score`) were separated
-
----
-
-### Model
-
-A Linear Regression model was used to:
-
-* model the relationship between study time and exam score
-* estimate how much exam performance changes with additional study time
+- Synthetic dataset representing student study behavior  
+- Variables:  
+  - hours_studied — number of hours spent studying  
+  - exam_score — corresponding exam result  
 
 ---
 
-### Training
+## Methodology  
 
-The model was trained on the full dataset to learn the linear relationship.
+### Data Preparation  
+- Structured dataset using Pandas  
+- Defined features (X) and target variable (y)  
 
----
+### Model Development  
+- Applied **Linear Regression** from Scikit-learn  
+- Trained model to learn relationship between study time and exam score  
 
-### Prediction
-
-The model was used to predict the exam score for a student who studies 9 hours.
-
-Predicted result:
-
-```id="a1b2c3"
-Predicted score for 9 hours: 92.5
-```
+### Prediction & Visualization  
+- Predicted exam score for 9 hours of study  
+- Visualized data points and regression line using Matplotlib  
 
 ---
 
-### Visualization
+## Results  
 
-A scatter plot was created to show:
-
-* actual data points
-* regression line representing the model
-
-This helps visualize the relationship between study time and performance.
+- Predicted score for 9 study hours: **~92.5**  
+- Model coefficient: **~5.42**  
 
 ---
 
-## Results
+## Key Insights  
 
-The model identified a positive linear relationship between study time and exam scores.
-
-Model coefficient:
-
-```id="d4e5f6"
-5.4167
-```
-
-
-This means that, on average, each additional hour of study increases the exam score by approximately 5.42 points.
+- Strong positive relationship between study time and exam performance  
+- Each additional hour of study increases predicted score by ~5.4 points  
+- Linear Regression effectively captures simple patterns in data  
 
 ---
 
-## Key Insights
+## Limitations  
 
-* There is a clear positive correlation between study time and exam performance
-* Linear regression is effective for modeling simple relationships
-* Even small datasets can demonstrate fundamental machine learning concepts
-
----
-
-## Limitations
-
-* Small dataset size
-* Data is synthetic and does not represent real-world variability
-* Does not account for other factors (e.g., prior knowledge, sleep, environment)
+- Synthetic dataset (not real-world data)  
+- Small sample size  
+- Assumes linear relationship between variables  
+- Does not include other factors (sleep, stress, learning quality)  
 
 ---
 
-## Future Improvements
+## Future Improvements  
 
-* Use a larger, real-world dataset
-* Include additional features (e.g., attendance, sleep, study methods)
-* Evaluate model performance using metrics (R², MAE)
-* Compare with more complex models
-
----
-
-## Tech Stack
-
-* Python
-* Pandas
-* Scikit-learn
-* Matplotlib
+- Use real-world datasets  
+- Add more features (sleep, focus, environment)  
+- Apply advanced models (Polynomial Regression, Random Forest)  
+- Evaluate model performance using metrics (RMSE, R²)  
 
 ---
 
-## Repository Structure
+## Tech Stack  
 
-```id="g7h8i9"
-student-performance/
-│
-├── notebook.ipynb
-├── README.md
-```
+- Python  
+- Pandas  
+- Scikit-learn  
+- Matplotlib  
 
 ---
 
-## Author
+## Project Value  
 
-Independent project demonstrating foundational skills in data analysis and machine learning.
+This project demonstrates the ability to:  
+- Build and train a machine learning model  
+- Interpret model outputs (coefficients, predictions)  
+- Translate data into quantitative insights  
+
+---
+
+## Author  
+
+Data Science & Machine Learning student focused on predictive modeling and real-world data applications
